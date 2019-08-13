@@ -52,6 +52,13 @@ int main()
     std::function<void(int)> f_display_obj = PrintNum();
     f_display_obj(18);
 
+    std::function<void(int)> f;
+    if (f) {
+        std::cout << "f can run" << std::endl;
+    } else {
+        std::cout << "f is empty" << std::endl;
+    }
+    
 
     return 0;
 }
